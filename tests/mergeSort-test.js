@@ -1,4 +1,4 @@
-const { assert, expect, should } = require ('chai');
+const { assert, expect } = require ('chai');
 const sortyMcSortFace = require ('../lib/mergeSort')
 let randomArray = require('../lib/index')
 
@@ -17,7 +17,6 @@ describe('sortyMcSortFace', () => {
 
     expect(mergeSort).to.deep.equal([1, 2, 3, 4, 5]);
 
-    console.log(mergeSort);
   });
 
   it('should sort an array of letters', ()=> {
@@ -25,17 +24,13 @@ describe('sortyMcSortFace', () => {
 
     expect(mergeSort).to.deep.equal(['A', 'B', 'C', 'D', 'E']);
 
-    console.log(mergeSort);
   });
 
   it('should sort auto generated random array of 10 nums', ()=> {
     let newArray = randomArray(10);
 
-    console.log(newArray);
-
     let mergeSort = sortyMcSortFace(newArray)
 
-    console.log(mergeSort);
   });
 
   it('should sort an array of 10,000 numbers', ()=> {
