@@ -28,7 +28,7 @@ describe('sortyMcSortFace', () => {
   it('should sort auto generated random array of 10 nums', ()=> {
     let newArray = randomArray(10);
 
-    let mergeSort = sortyMcSortFace(newArray)
+    sortyMcSortFace(newArray)
 
   });
 
