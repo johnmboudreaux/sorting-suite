@@ -12,7 +12,6 @@ describe('sortyMcSortFace', () => {
   });
 
   it('should sort an array numerically', () => {
-
     let mergeSort = sortyMcSortFace([1, 4, 2, 5, 3]);
 
     expect(mergeSort).to.deep.equal([1, 2, 3, 4, 5]);
